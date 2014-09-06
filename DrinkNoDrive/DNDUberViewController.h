@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DNDSecondViewController : UIViewController
+@interface DNDUberViewController : UIViewController
 
 @end

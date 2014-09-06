@@ -8,11 +8,11 @@
 
 #import "DNDUberViewController.h"
 
-@interface DNDSecondViewController ()
+@interface DNDUberViewController ()
 
 @end
 
-@implementation DNDSecondViewController
+@implementation DNDUberViewController
 
 - (void)viewDidLoad
 {

@@ -8,11 +8,11 @@
 
 #import "DNDMainViewController.h"
 
-@interface DNDFirstViewController ()
+@interface DNDMainViewController ()
 
 @end
 
-@implementation DNDFirstViewController
+@implementation DNDMainViewController
 
 - (void)viewDidLoad
 {

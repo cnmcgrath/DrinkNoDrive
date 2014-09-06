@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DNDFirstViewController : UIViewController
+@interface DNDMainViewController : UIViewController
 
 @end

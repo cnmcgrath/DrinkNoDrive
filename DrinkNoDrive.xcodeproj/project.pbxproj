@@ -20,6 +20,8 @@
 		F53A1CFE19BAA4280032AB52 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F53A1CFD19BAA4280032AB52 /* MobileCoreServices.framework */; };
 		F53A1D0019BAA4340032AB52 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F53A1CFF19BAA4340032AB52 /* Security.framework */; };
 		F53A1D0219BAA43F0032AB52 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F53A1D0119BAA43F0032AB52 /* SystemConfiguration.framework */; };
+		F53A1D0819BAAE110032AB52 /* DNDParseDownloadController.m in Sources */ = {isa = PBXBuildFile; fileRef = F53A1D0719BAAE110032AB52 /* DNDParseDownloadController.m */; };
+		F53A1D0F19BAAE7C0032AB52 /* UIColor+DNDColor.m in Sources */ = {isa = PBXBuildFile; fileRef = F53A1D0E19BAAE7C0032AB52 /* UIColor+DNDColor.m */; };
 		F5B1259419BA9F3E00FAC94A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5B1259319BA9F3E00FAC94A /* Foundation.framework */; };
 		F5B1259619BA9F3E00FAC94A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5B1259519BA9F3E00FAC94A /* CoreGraphics.framework */; };
 		F5B1259819BA9F3E00FAC94A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5B1259719BA9F3E00FAC94A /* UIKit.framework */; };
@@ -63,6 +65,10 @@
 		F53A1CFD19BAA4280032AB52 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		F53A1CFF19BAA4340032AB52 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		F53A1D0119BAA43F0032AB52 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		F53A1D0619BAAE110032AB52 /* DNDParseDownloadController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNDParseDownloadController.h; sourceTree = "<group>"; };
+		F53A1D0719BAAE110032AB52 /* DNDParseDownloadController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNDParseDownloadController.m; sourceTree = "<group>"; };
+		F53A1D0D19BAAE7C0032AB52 /* UIColor+DNDColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+DNDColor.h"; sourceTree = "<group>"; };
+		F53A1D0E19BAAE7C0032AB52 /* UIColor+DNDColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+DNDColor.m"; sourceTree = "<group>"; };
 		F5B1259019BA9F3E00FAC94A /* DrinkNoDrive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrinkNoDrive.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5B1259319BA9F3E00FAC94A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F5B1259519BA9F3E00FAC94A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -132,6 +138,47 @@
 			path = "parse-library-1.2.21";
 			sourceTree = "<group>";
 		};
+		F53A1D0319BAACB20032AB52 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				F53A1CF419BAA21F0032AB52 /* DNDMenuViewController.h */,
+				F53A1CF519BAA21F0032AB52 /* DNDMenuViewController.m */,
+				F5B125A819BA9F3E00FAC94A /* DNDMainViewController.h */,
+				F5B125A919BA9F3E00FAC94A /* DNDMainViewController.m */,
+				F5B125AB19BA9F3E00FAC94A /* DNDUberViewController.h */,
+				F5B125AC19BA9F3E00FAC94A /* DNDUberViewController.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		F53A1D0419BAACC80032AB52 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F53A1D0619BAAE110032AB52 /* DNDParseDownloadController.h */,
+				F53A1D0719BAAE110032AB52 /* DNDParseDownloadController.m */,
+			);
+			name = Model;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		F53A1D0519BAACE00032AB52 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Views;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		F53A1D0919BAAE2C0032AB52 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				F53A1D0D19BAAE7C0032AB52 /* UIColor+DNDColor.h */,
+				F53A1D0E19BAAE7C0032AB52 /* UIColor+DNDColor.m */,
+			);
+			name = Categories;
+			path = ..;
+			sourceTree = "<group>";
+		};
 		F5B1258719BA9F3E00FAC94A = {
 			isa = PBXGroup;
 			children = (
@@ -179,12 +226,10 @@
 				F5B125A219BA9F3E00FAC94A /* DNDAppDelegate.h */,
 				F5B125A319BA9F3E00FAC94A /* DNDAppDelegate.m */,
 				F5B125A519BA9F3E00FAC94A /* Main.storyboard */,
-				F53A1CF419BAA21F0032AB52 /* DNDMenuViewController.h */,
-				F53A1CF519BAA21F0032AB52 /* DNDMenuViewController.m */,
-				F5B125A819BA9F3E00FAC94A /* DNDMainViewController.h */,
-				F5B125A919BA9F3E00FAC94A /* DNDMainViewController.m */,
-				F5B125AB19BA9F3E00FAC94A /* DNDUberViewController.h */,
-				F5B125AC19BA9F3E00FAC94A /* DNDUberViewController.m */,
+				F53A1D0919BAAE2C0032AB52 /* Categories */,
+				F53A1D0419BAACC80032AB52 /* Model */,
+				F53A1D0319BAACB20032AB52 /* ViewControllers */,
+				F53A1D0519BAACE00032AB52 /* Views */,
 				F5B125AE19BA9F3E00FAC94A /* Images.xcassets */,
 				F5B1259A19BA9F3E00FAC94A /* Supporting Files */,
 			);
@@ -322,7 +367,9 @@
 				F53A1CF619BAA21F0032AB52 /* DNDMenuViewController.m in Sources */,
 				F5B125AD19BA9F3E00FAC94A /* DNDUberViewController.m in Sources */,
 				F5B125A419BA9F3E00FAC94A /* DNDAppDelegate.m in Sources */,
+				F53A1D0819BAAE110032AB52 /* DNDParseDownloadController.m in Sources */,
 				F5B125AA19BA9F3E00FAC94A /* DNDMainViewController.m in Sources */,
+				F53A1D0F19BAAE7C0032AB52 /* UIColor+DNDColor.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

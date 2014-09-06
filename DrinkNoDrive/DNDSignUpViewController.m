@@ -160,13 +160,14 @@
         user.password = _passwordField.text;
         user.email = _emailAddressField.text;
         
-        user[@"Height_feet"] = _heightField.text;
-        user[@"Weight_Pounds"] = _weightField.text;
+        user[@"Height_feet"] = [NSNumber numberWithInt:_heightField.text.intValue];
+        user[@"Weight_Pounds"] = [NSNumber numberWithInt:_weightField.text.intValue];
         user[@"HomeAddress"] = _homeAddressField.text;
         
         [user signUpInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
             if (!error) {
                 // Hooray! Let them use the app now.
+                [self dismissViewControllerAnimated:YES completion:nil];
             } else {
                 NSString *errorString = [error userInfo][@"error"];
                 NSLog(@"%@",errorString);

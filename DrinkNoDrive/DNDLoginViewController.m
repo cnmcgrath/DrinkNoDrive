@@ -50,6 +50,7 @@
 
 - (IBAction)performLoginWithParse:(id)sender {
     [PFUser logInWithUsernameInBackground:_emailTextField.text password:_passwordTextField.text block:^(PFUser *user, NSError *error) {
+        NSLog(@"%@ %@",_emailTextField.text,_passwordTextField.text);
         if (user) {
             // Do stuff after successful login.
             [self performSegueWithIdentifier:@"loginSegue" sender:self];

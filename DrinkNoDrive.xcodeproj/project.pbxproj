@@ -22,6 +22,8 @@
 		F53A1D0219BAA43F0032AB52 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F53A1D0119BAA43F0032AB52 /* SystemConfiguration.framework */; };
 		F53A1D0819BAAE110032AB52 /* DNDParseDownloadController.m in Sources */ = {isa = PBXBuildFile; fileRef = F53A1D0719BAAE110032AB52 /* DNDParseDownloadController.m */; };
 		F53A1D0F19BAAE7C0032AB52 /* UIColor+DNDColor.m in Sources */ = {isa = PBXBuildFile; fileRef = F53A1D0E19BAAE7C0032AB52 /* UIColor+DNDColor.m */; };
+		F53A1D1319BAB0720032AB52 /* DNDLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F53A1D1219BAB0720032AB52 /* DNDLoginViewController.m */; };
+		F53A1D1619BAB2180032AB52 /* DNDSignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F53A1D1519BAB2180032AB52 /* DNDSignUpViewController.m */; };
 		F5B1259419BA9F3E00FAC94A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5B1259319BA9F3E00FAC94A /* Foundation.framework */; };
 		F5B1259619BA9F3E00FAC94A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5B1259519BA9F3E00FAC94A /* CoreGraphics.framework */; };
 		F5B1259819BA9F3E00FAC94A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5B1259719BA9F3E00FAC94A /* UIKit.framework */; };
@@ -69,6 +71,10 @@
 		F53A1D0719BAAE110032AB52 /* DNDParseDownloadController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNDParseDownloadController.m; sourceTree = "<group>"; };
 		F53A1D0D19BAAE7C0032AB52 /* UIColor+DNDColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+DNDColor.h"; sourceTree = "<group>"; };
 		F53A1D0E19BAAE7C0032AB52 /* UIColor+DNDColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+DNDColor.m"; sourceTree = "<group>"; };
+		F53A1D1119BAB0720032AB52 /* DNDLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNDLoginViewController.h; sourceTree = "<group>"; };
+		F53A1D1219BAB0720032AB52 /* DNDLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNDLoginViewController.m; sourceTree = "<group>"; };
+		F53A1D1419BAB2180032AB52 /* DNDSignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNDSignUpViewController.h; sourceTree = "<group>"; };
+		F53A1D1519BAB2180032AB52 /* DNDSignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNDSignUpViewController.m; sourceTree = "<group>"; };
 		F5B1259019BA9F3E00FAC94A /* DrinkNoDrive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrinkNoDrive.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5B1259319BA9F3E00FAC94A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F5B1259519BA9F3E00FAC94A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -147,6 +153,7 @@
 				F5B125A919BA9F3E00FAC94A /* DNDMainViewController.m */,
 				F5B125AB19BA9F3E00FAC94A /* DNDUberViewController.h */,
 				F5B125AC19BA9F3E00FAC94A /* DNDUberViewController.m */,
+				F53A1D1019BAB0210032AB52 /* Login */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -177,6 +184,17 @@
 			);
 			name = Categories;
 			path = ..;
+			sourceTree = "<group>";
+		};
+		F53A1D1019BAB0210032AB52 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				F53A1D1119BAB0720032AB52 /* DNDLoginViewController.h */,
+				F53A1D1219BAB0720032AB52 /* DNDLoginViewController.m */,
+				F53A1D1419BAB2180032AB52 /* DNDSignUpViewController.h */,
+				F53A1D1519BAB2180032AB52 /* DNDSignUpViewController.m */,
+			);
+			name = Login;
 			sourceTree = "<group>";
 		};
 		F5B1258719BA9F3E00FAC94A = {
@@ -364,6 +382,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F5B125A019BA9F3E00FAC94A /* main.m in Sources */,
+				F53A1D1319BAB0720032AB52 /* DNDLoginViewController.m in Sources */,
+				F53A1D1619BAB2180032AB52 /* DNDSignUpViewController.m in Sources */,
 				F53A1CF619BAA21F0032AB52 /* DNDMenuViewController.m in Sources */,
 				F5B125AD19BA9F3E00FAC94A /* DNDUberViewController.m in Sources */,
 				F5B125A419BA9F3E00FAC94A /* DNDAppDelegate.m in Sources */,

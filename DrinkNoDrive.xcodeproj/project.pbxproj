@@ -13,8 +13,13 @@
 		F53A1CED19BAA17F0032AB52 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F53A1CEC19BAA17F0032AB52 /* CoreLocation.framework */; };
 		F53A1CEF19BAA1860032AB52 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F53A1CEE19BAA1860032AB52 /* StoreKit.framework */; };
 		F53A1CF119BAA1960032AB52 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F53A1CF019BAA1960032AB52 /* QuartzCore.framework */; };
-		F53A1CF319BAA1A60032AB52 /* libz.1.1.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F53A1CF219BAA1A60032AB52 /* libz.1.1.3.dylib */; };
 		F53A1CF619BAA21F0032AB52 /* DNDMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F53A1CF519BAA21F0032AB52 /* DNDMenuViewController.m */; };
+		F53A1CF819BAA3FF0032AB52 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F53A1CF719BAA3FF0032AB52 /* AudioToolbox.framework */; };
+		F53A1CFA19BAA4080032AB52 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F53A1CF919BAA4080032AB52 /* CFNetwork.framework */; };
+		F53A1CFC19BAA41A0032AB52 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F53A1CFB19BAA41A0032AB52 /* libz.dylib */; };
+		F53A1CFE19BAA4280032AB52 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F53A1CFD19BAA4280032AB52 /* MobileCoreServices.framework */; };
+		F53A1D0019BAA4340032AB52 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F53A1CFF19BAA4340032AB52 /* Security.framework */; };
+		F53A1D0219BAA43F0032AB52 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F53A1D0119BAA43F0032AB52 /* SystemConfiguration.framework */; };
 		F5B1259419BA9F3E00FAC94A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5B1259319BA9F3E00FAC94A /* Foundation.framework */; };
 		F5B1259619BA9F3E00FAC94A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5B1259519BA9F3E00FAC94A /* CoreGraphics.framework */; };
 		F5B1259819BA9F3E00FAC94A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5B1259719BA9F3E00FAC94A /* UIKit.framework */; };
@@ -52,6 +57,12 @@
 		F53A1CF219BAA1A60032AB52 /* libz.1.1.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.1.3.dylib; path = usr/lib/libz.1.1.3.dylib; sourceTree = SDKROOT; };
 		F53A1CF419BAA21F0032AB52 /* DNDMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNDMenuViewController.h; sourceTree = "<group>"; };
 		F53A1CF519BAA21F0032AB52 /* DNDMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNDMenuViewController.m; sourceTree = "<group>"; };
+		F53A1CF719BAA3FF0032AB52 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		F53A1CF919BAA4080032AB52 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		F53A1CFB19BAA41A0032AB52 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		F53A1CFD19BAA4280032AB52 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		F53A1CFF19BAA4340032AB52 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		F53A1D0119BAA43F0032AB52 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		F5B1259019BA9F3E00FAC94A /* DrinkNoDrive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrinkNoDrive.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5B1259319BA9F3E00FAC94A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F5B1259519BA9F3E00FAC94A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -80,7 +91,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F53A1CF319BAA1A60032AB52 /* libz.1.1.3.dylib in Frameworks */,
+				F53A1D0219BAA43F0032AB52 /* SystemConfiguration.framework in Frameworks */,
+				F53A1D0019BAA4340032AB52 /* Security.framework in Frameworks */,
+				F53A1CFE19BAA4280032AB52 /* MobileCoreServices.framework in Frameworks */,
+				F53A1CFC19BAA41A0032AB52 /* libz.dylib in Frameworks */,
+				F53A1CFA19BAA4080032AB52 /* CFNetwork.framework in Frameworks */,
+				F53A1CF819BAA3FF0032AB52 /* AudioToolbox.framework in Frameworks */,
 				F53A1CF119BAA1960032AB52 /* QuartzCore.framework in Frameworks */,
 				F53A1CEF19BAA1860032AB52 /* StoreKit.framework in Frameworks */,
 				F53A1CED19BAA17F0032AB52 /* CoreLocation.framework in Frameworks */,
@@ -138,6 +154,12 @@
 		F5B1259219BA9F3E00FAC94A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F53A1D0119BAA43F0032AB52 /* SystemConfiguration.framework */,
+				F53A1CFF19BAA4340032AB52 /* Security.framework */,
+				F53A1CFD19BAA4280032AB52 /* MobileCoreServices.framework */,
+				F53A1CFB19BAA41A0032AB52 /* libz.dylib */,
+				F53A1CF919BAA4080032AB52 /* CFNetwork.framework */,
+				F53A1CF719BAA3FF0032AB52 /* AudioToolbox.framework */,
 				F53A1CE519BAA1590032AB52 /* parse-library-1.2.21 */,
 				F53A1CF219BAA1A60032AB52 /* libz.1.1.3.dylib */,
 				F53A1CF019BAA1960032AB52 /* QuartzCore.framework */,

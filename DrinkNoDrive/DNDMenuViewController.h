@@ -10,4 +10,9 @@
 
 @interface DNDMenuViewController : UIViewController
 
+- (IBAction)beerButtonTapped:(id)sender;
+- (IBAction)cocktailButtonTapped:(id)sender;
+- (IBAction)wineButtonTapped:(id)sender;
+- (IBAction)liquorButtonTapped:(id)sender;
+
 @end

@@ -7,10 +7,14 @@
 //
 
 #import "DNDLoginViewController.h"
+#import "UIColor+DNDColor.h"
 #import "Parse/Parse.h"
 
 
 @interface DNDLoginViewController ()
+{
+    NSUserDefaults *defaults;
+}
 
 @end
 
@@ -29,6 +33,10 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    defaults = [NSUserDefaults standardUserDefaults];
+    _emailTextField.text = [defaults objectForKey:@"email"];
+    self.view.backgroundColor = [UIColor appBackground];
+
 }
 
 - (void)didReceiveMemoryWarning
@@ -44,15 +52,17 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     // Get the new view controller using [segue destinationViewController].
+    [segue destinationViewController];
     // Pass the selected object to the new view controller.
 }
 
 
 - (IBAction)performLoginWithParse:(id)sender {
     [PFUser logInWithUsernameInBackground:_emailTextField.text password:_passwordTextField.text block:^(PFUser *user, NSError *error) {
-        NSLog(@"%@ %@",_emailTextField.text,_passwordTextField.text);
         if (user) {
             // Do stuff after successful login.
+            [defaults setObject:_emailTextField.text forKey:@"email"];
+            [defaults synchronize];
             [self performSegueWithIdentifier:@"loginSegue" sender:self];
         } else {
             // The login failed. Check error to see why.

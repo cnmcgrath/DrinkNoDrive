@@ -34,6 +34,7 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.view.backgroundColor = [UIColor appBackground];
 
     NSLayoutConstraint *leftConstraint =[NSLayoutConstraint
                                          constraintWithItem:self.contentView
@@ -169,8 +170,12 @@
                 // Hooray! Let them use the app now.
                 [self dismissViewControllerAnimated:YES completion:nil];
             } else {
-                NSString *errorString = [error userInfo][@"error"];
-                NSLog(@"%@",errorString);
+                UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Login Failed"
+                                                                message:[error userInfo][@"error"]
+                                                               delegate:self
+                                                      cancelButtonTitle:@"Awww..."
+                                                      otherButtonTitles:nil, nil];
+                [alert show];
                 // Show the errorString somewhere and let the user try again.
             }
         }];

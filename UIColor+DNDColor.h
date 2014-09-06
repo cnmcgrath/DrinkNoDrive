@@ -10,6 +10,8 @@
 
 @interface UIColor (DNDColor)
 
-+ (UIColor *) redBackground;
++ (UIColor *)redBackground;
+
++ (UIColor *)appBackground;
 
 @end

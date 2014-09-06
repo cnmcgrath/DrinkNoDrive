@@ -7,6 +7,8 @@
 //
 
 #import "DNDMenuViewController.h"
+#import "UIColor+DNDColor.h"
+
 
 @interface DNDMenuViewController ()
 
@@ -27,6 +29,8 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.view.backgroundColor = [UIColor appBackground];
+
 }
 
 - (void)didReceiveMemoryWarning

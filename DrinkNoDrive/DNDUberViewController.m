@@ -8,6 +8,9 @@
 
 #import "DNDUberViewController.h"
 
+#import "UIColor+DNDColor.h"
+
+
 @interface DNDUberViewController ()
 
 @end
@@ -18,6 +21,8 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    self.view.backgroundColor = [UIColor appBackground];
+
 }
 
 - (void)didReceiveMemoryWarning

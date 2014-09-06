@@ -15,4 +15,9 @@
     return red;
 }
 
++ (UIColor *) appBackground {
+    UIColor *red = [UIColor colorWithPatternImage:[UIImage imageNamed:@"background"]];
+    return red;
+}
+
 @end

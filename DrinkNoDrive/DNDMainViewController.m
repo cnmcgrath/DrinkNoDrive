@@ -15,8 +15,13 @@
 
 #import "UIColor+DNDColor.h"
 
+#import <Parse/Parse.h>
+
 
 @interface DNDMainViewController () <UITableViewDelegate,UITableViewDataSource>
+{
+    float bac;
+}
 
 @end
 
@@ -26,8 +31,33 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-    self.view.backgroundColor = [UIColor appBackground];
+    
     self.tableView.backgroundColor = [UIColor appBackground];
+    
+
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    PFQuery *query = [PFQuery queryWithClassName:@"DrinkHistory"];
+    [query whereKey:@"Customer" equalTo:[PFUser currentUser]];
+    [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+        NSLog(@"Number of drinks??? %d",[objects count]);
+        [[PFUser query] getFirstObjectInBackgroundWithBlock:^(PFObject *object, NSError *error) {
+            //start calulating BAC
+            if ([objects count] != 0) {
+                float weight = [object[@"Weight_Pounds"] floatValue];
+                float gender = [object[@"gender"] floatValue];
+                float newBAC = (((0.6*[objects count])*5.14)/((weight)*(gender)))-(.015 * (1));
+                bac = newBAC;
+                [self.tableView reloadData];
+            }else{
+                bac = 0.0;
+                [self.tableView reloadData];
+            }
+            
+        }];
+    }];
 }
 
 - (void)didReceiveMemoryWarning
@@ -55,8 +85,13 @@
     DNDbacCellTableViewCell *bacCell = [tableView dequeueReusableCellWithIdentifier:@"bacCell"];
     DNDLastDrinkTableViewCell *lastCell = [tableView dequeueReusableCellWithIdentifier:@"lastCell"];
     DNDGoHomeTableViewCell *homeCell = [tableView dequeueReusableCellWithIdentifier:@"homeCell"];
+    
+
+    
+    
 
     if (indexPath.section == 0) {
+        bacCell.bacTextLabel.text = [NSString stringWithFormat:@"%.3f",bac];
         return bacCell;
     }else if (indexPath.section == 1){
         return lastCell;

@@ -8,9 +8,12 @@
 
 #import <UIKit/UIKit.h>
 #import <Parse/Parse.h>
+#import "DNDParseDownloadController.h"
+
 
 @interface DNDAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
-
+@property (strong, nonatomic) DNDParseDownloadController *data;
+@property (strong, nonatomic) NSArray *arrayOfDrinkObjects;
 @end

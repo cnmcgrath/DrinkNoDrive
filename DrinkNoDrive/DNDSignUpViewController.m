@@ -164,6 +164,7 @@
         user[@"Height_feet"] = [NSNumber numberWithInt:_heightField.text.intValue];
         user[@"Weight_Pounds"] = [NSNumber numberWithInt:_weightField.text.intValue];
         user[@"HomeAddress"] = _homeAddressField.text;
+        user[@"Estimated_BAC"] = @"0.0";
         
         [user signUpInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
             if (!error) {

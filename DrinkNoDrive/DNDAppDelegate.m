@@ -7,6 +7,7 @@
 //
 
 #import "DNDAppDelegate.h"
+#import "DNDParseDownloadController.h"
 
 @implementation DNDAppDelegate
 
@@ -19,6 +20,15 @@
                   clientKey:@"ON9jTvNjTRuSApp5gO2OD4RnHTwhapionloemlWe"];
     
     [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
+    
+    _data = [[DNDParseDownloadController alloc] init];
+    _arrayOfDrinkObjects = [NSArray new];
+    
+    
+    [_data downloadAllDrinksCompletionBlock:^(NSArray *drinks, NSError *err) {
+        _arrayOfDrinkObjects = drinks;
+//        NSLog(@"%@",_arrayOfDrinkObjects);
+    }];
     return YES;
 }
 							

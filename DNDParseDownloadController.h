@@ -7,7 +7,16 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <Parse/Parse.h>
 
 @interface DNDParseDownloadController : NSObject
+
+
+
+
+
+- (void)downloadAllDrinksCompletionBlock:(void (^)(NSArray *drinks, NSError *err))block;
+
+
 
 @end

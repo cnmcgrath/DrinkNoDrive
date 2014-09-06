@@ -1,0 +1,478 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F5B1259419BA9F3E00FAC94A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5B1259319BA9F3E00FAC94A /* Foundation.framework */; };
+		F5B1259619BA9F3E00FAC94A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5B1259519BA9F3E00FAC94A /* CoreGraphics.framework */; };
+		F5B1259819BA9F3E00FAC94A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5B1259719BA9F3E00FAC94A /* UIKit.framework */; };
+		F5B1259E19BA9F3E00FAC94A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F5B1259C19BA9F3E00FAC94A /* InfoPlist.strings */; };
+		F5B125A019BA9F3E00FAC94A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F5B1259F19BA9F3E00FAC94A /* main.m */; };
+		F5B125A419BA9F3E00FAC94A /* DNDAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F5B125A319BA9F3E00FAC94A /* DNDAppDelegate.m */; };
+		F5B125A719BA9F3E00FAC94A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5B125A519BA9F3E00FAC94A /* Main.storyboard */; };
+		F5B125AA19BA9F3E00FAC94A /* DNDFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5B125A919BA9F3E00FAC94A /* DNDFirstViewController.m */; };
+		F5B125AD19BA9F3E00FAC94A /* DNDSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5B125AC19BA9F3E00FAC94A /* DNDSecondViewController.m */; };
+		F5B125AF19BA9F3E00FAC94A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5B125AE19BA9F3E00FAC94A /* Images.xcassets */; };
+		F5B125B619BA9F3E00FAC94A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5B125B519BA9F3E00FAC94A /* XCTest.framework */; };
+		F5B125B719BA9F3E00FAC94A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5B1259319BA9F3E00FAC94A /* Foundation.framework */; };
+		F5B125B819BA9F3E00FAC94A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5B1259719BA9F3E00FAC94A /* UIKit.framework */; };
+		F5B125C019BA9F3E00FAC94A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F5B125BE19BA9F3E00FAC94A /* InfoPlist.strings */; };
+		F5B125C219BA9F3E00FAC94A /* DrinkNoDriveTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F5B125C119BA9F3E00FAC94A /* DrinkNoDriveTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F5B125B919BA9F3E00FAC94A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F5B1258819BA9F3E00FAC94A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F5B1258F19BA9F3E00FAC94A;
+			remoteInfo = DrinkNoDrive;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F5B1259019BA9F3E00FAC94A /* DrinkNoDrive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrinkNoDrive.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5B1259319BA9F3E00FAC94A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F5B1259519BA9F3E00FAC94A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F5B1259719BA9F3E00FAC94A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		F5B1259B19BA9F3E00FAC94A /* DrinkNoDrive-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DrinkNoDrive-Info.plist"; sourceTree = "<group>"; };
+		F5B1259D19BA9F3E00FAC94A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F5B1259F19BA9F3E00FAC94A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F5B125A119BA9F3E00FAC94A /* DrinkNoDrive-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DrinkNoDrive-Prefix.pch"; sourceTree = "<group>"; };
+		F5B125A219BA9F3E00FAC94A /* DNDAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DNDAppDelegate.h; sourceTree = "<group>"; };
+		F5B125A319BA9F3E00FAC94A /* DNDAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DNDAppDelegate.m; sourceTree = "<group>"; };
+		F5B125A619BA9F3E00FAC94A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F5B125A819BA9F3E00FAC94A /* DNDFirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DNDFirstViewController.h; sourceTree = "<group>"; };
+		F5B125A919BA9F3E00FAC94A /* DNDFirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DNDFirstViewController.m; sourceTree = "<group>"; };
+		F5B125AB19BA9F3E00FAC94A /* DNDSecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DNDSecondViewController.h; sourceTree = "<group>"; };
+		F5B125AC19BA9F3E00FAC94A /* DNDSecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DNDSecondViewController.m; sourceTree = "<group>"; };
+		F5B125AE19BA9F3E00FAC94A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F5B125B419BA9F3E00FAC94A /* DrinkNoDriveTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DrinkNoDriveTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5B125B519BA9F3E00FAC94A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		F5B125BD19BA9F3E00FAC94A /* DrinkNoDriveTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DrinkNoDriveTests-Info.plist"; sourceTree = "<group>"; };
+		F5B125BF19BA9F3E00FAC94A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F5B125C119BA9F3E00FAC94A /* DrinkNoDriveTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DrinkNoDriveTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F5B1258D19BA9F3E00FAC94A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5B1259619BA9F3E00FAC94A /* CoreGraphics.framework in Frameworks */,
+				F5B1259819BA9F3E00FAC94A /* UIKit.framework in Frameworks */,
+				F5B1259419BA9F3E00FAC94A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5B125B119BA9F3E00FAC94A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5B125B619BA9F3E00FAC94A /* XCTest.framework in Frameworks */,
+				F5B125B819BA9F3E00FAC94A /* UIKit.framework in Frameworks */,
+				F5B125B719BA9F3E00FAC94A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F5B1258719BA9F3E00FAC94A = {
+			isa = PBXGroup;
+			children = (
+				F5B1259919BA9F3E00FAC94A /* DrinkNoDrive */,
+				F5B125BB19BA9F3E00FAC94A /* DrinkNoDriveTests */,
+				F5B1259219BA9F3E00FAC94A /* Frameworks */,
+				F5B1259119BA9F3E00FAC94A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F5B1259119BA9F3E00FAC94A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F5B1259019BA9F3E00FAC94A /* DrinkNoDrive.app */,
+				F5B125B419BA9F3E00FAC94A /* DrinkNoDriveTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F5B1259219BA9F3E00FAC94A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F5B1259319BA9F3E00FAC94A /* Foundation.framework */,
+				F5B1259519BA9F3E00FAC94A /* CoreGraphics.framework */,
+				F5B1259719BA9F3E00FAC94A /* UIKit.framework */,
+				F5B125B519BA9F3E00FAC94A /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F5B1259919BA9F3E00FAC94A /* DrinkNoDrive */ = {
+			isa = PBXGroup;
+			children = (
+				F5B125A219BA9F3E00FAC94A /* DNDAppDelegate.h */,
+				F5B125A319BA9F3E00FAC94A /* DNDAppDelegate.m */,
+				F5B125A519BA9F3E00FAC94A /* Main.storyboard */,
+				F5B125A819BA9F3E00FAC94A /* DNDFirstViewController.h */,
+				F5B125A919BA9F3E00FAC94A /* DNDFirstViewController.m */,
+				F5B125AB19BA9F3E00FAC94A /* DNDSecondViewController.h */,
+				F5B125AC19BA9F3E00FAC94A /* DNDSecondViewController.m */,
+				F5B125AE19BA9F3E00FAC94A /* Images.xcassets */,
+				F5B1259A19BA9F3E00FAC94A /* Supporting Files */,
+			);
+			path = DrinkNoDrive;
+			sourceTree = "<group>";
+		};
+		F5B1259A19BA9F3E00FAC94A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F5B1259B19BA9F3E00FAC94A /* DrinkNoDrive-Info.plist */,
+				F5B1259C19BA9F3E00FAC94A /* InfoPlist.strings */,
+				F5B1259F19BA9F3E00FAC94A /* main.m */,
+				F5B125A119BA9F3E00FAC94A /* DrinkNoDrive-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F5B125BB19BA9F3E00FAC94A /* DrinkNoDriveTests */ = {
+			isa = PBXGroup;
+			children = (
+				F5B125C119BA9F3E00FAC94A /* DrinkNoDriveTests.m */,
+				F5B125BC19BA9F3E00FAC94A /* Supporting Files */,
+			);
+			path = DrinkNoDriveTests;
+			sourceTree = "<group>";
+		};
+		F5B125BC19BA9F3E00FAC94A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F5B125BD19BA9F3E00FAC94A /* DrinkNoDriveTests-Info.plist */,
+				F5B125BE19BA9F3E00FAC94A /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F5B1258F19BA9F3E00FAC94A /* DrinkNoDrive */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F5B125C519BA9F3E00FAC94A /* Build configuration list for PBXNativeTarget "DrinkNoDrive" */;
+			buildPhases = (
+				F5B1258C19BA9F3E00FAC94A /* Sources */,
+				F5B1258D19BA9F3E00FAC94A /* Frameworks */,
+				F5B1258E19BA9F3E00FAC94A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DrinkNoDrive;
+			productName = DrinkNoDrive;
+			productReference = F5B1259019BA9F3E00FAC94A /* DrinkNoDrive.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F5B125B319BA9F3E00FAC94A /* DrinkNoDriveTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F5B125C819BA9F3E00FAC94A /* Build configuration list for PBXNativeTarget "DrinkNoDriveTests" */;
+			buildPhases = (
+				F5B125B019BA9F3E00FAC94A /* Sources */,
+				F5B125B119BA9F3E00FAC94A /* Frameworks */,
+				F5B125B219BA9F3E00FAC94A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F5B125BA19BA9F3E00FAC94A /* PBXTargetDependency */,
+			);
+			name = DrinkNoDriveTests;
+			productName = DrinkNoDriveTests;
+			productReference = F5B125B419BA9F3E00FAC94A /* DrinkNoDriveTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F5B1258819BA9F3E00FAC94A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = DND;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Chris McGrath";
+				TargetAttributes = {
+					F5B125B319BA9F3E00FAC94A = {
+						TestTargetID = F5B1258F19BA9F3E00FAC94A;
+					};
+				};
+			};
+			buildConfigurationList = F5B1258B19BA9F3E00FAC94A /* Build configuration list for PBXProject "DrinkNoDrive" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F5B1258719BA9F3E00FAC94A;
+			productRefGroup = F5B1259119BA9F3E00FAC94A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F5B1258F19BA9F3E00FAC94A /* DrinkNoDrive */,
+				F5B125B319BA9F3E00FAC94A /* DrinkNoDriveTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F5B1258E19BA9F3E00FAC94A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5B125AF19BA9F3E00FAC94A /* Images.xcassets in Resources */,
+				F5B1259E19BA9F3E00FAC94A /* InfoPlist.strings in Resources */,
+				F5B125A719BA9F3E00FAC94A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5B125B219BA9F3E00FAC94A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5B125C019BA9F3E00FAC94A /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F5B1258C19BA9F3E00FAC94A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5B125A019BA9F3E00FAC94A /* main.m in Sources */,
+				F5B125AD19BA9F3E00FAC94A /* DNDSecondViewController.m in Sources */,
+				F5B125A419BA9F3E00FAC94A /* DNDAppDelegate.m in Sources */,
+				F5B125AA19BA9F3E00FAC94A /* DNDFirstViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5B125B019BA9F3E00FAC94A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5B125C219BA9F3E00FAC94A /* DrinkNoDriveTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F5B125BA19BA9F3E00FAC94A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F5B1258F19BA9F3E00FAC94A /* DrinkNoDrive */;
+			targetProxy = F5B125B919BA9F3E00FAC94A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F5B1259C19BA9F3E00FAC94A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F5B1259D19BA9F3E00FAC94A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		F5B125A519BA9F3E00FAC94A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F5B125A619BA9F3E00FAC94A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F5B125BE19BA9F3E00FAC94A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F5B125BF19BA9F3E00FAC94A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F5B125C319BA9F3E00FAC94A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F5B125C419BA9F3E00FAC94A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F5B125C619BA9F3E00FAC94A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DrinkNoDrive/DrinkNoDrive-Prefix.pch";
+				INFOPLIST_FILE = "DrinkNoDrive/DrinkNoDrive-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		F5B125C719BA9F3E00FAC94A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DrinkNoDrive/DrinkNoDrive-Prefix.pch";
+				INFOPLIST_FILE = "DrinkNoDrive/DrinkNoDrive-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		F5B125C919BA9F3E00FAC94A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DrinkNoDrive.app/DrinkNoDrive";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DrinkNoDrive/DrinkNoDrive-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "DrinkNoDriveTests/DrinkNoDriveTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		F5B125CA19BA9F3E00FAC94A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DrinkNoDrive.app/DrinkNoDrive";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DrinkNoDrive/DrinkNoDrive-Prefix.pch";
+				INFOPLIST_FILE = "DrinkNoDriveTests/DrinkNoDriveTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F5B1258B19BA9F3E00FAC94A /* Build configuration list for PBXProject "DrinkNoDrive" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5B125C319BA9F3E00FAC94A /* Debug */,
+				F5B125C419BA9F3E00FAC94A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F5B125C519BA9F3E00FAC94A /* Build configuration list for PBXNativeTarget "DrinkNoDrive" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5B125C619BA9F3E00FAC94A /* Debug */,
+				F5B125C719BA9F3E00FAC94A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F5B125C819BA9F3E00FAC94A /* Build configuration list for PBXNativeTarget "DrinkNoDriveTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5B125C919BA9F3E00FAC94A /* Debug */,
+				F5B125CA19BA9F3E00FAC94A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F5B1258819BA9F3E00FAC94A /* Project object */;
+}

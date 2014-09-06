@@ -6,7 +6,7 @@
 //  Copyright (c) 2014 Chris McGrath. All rights reserved.
 //
 
-#import "DNDFirstViewController.h"
+#import "DNDMainViewController.h"
 
 @interface DNDFirstViewController ()
 

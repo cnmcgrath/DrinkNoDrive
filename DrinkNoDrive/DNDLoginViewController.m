@@ -56,7 +56,7 @@
         } else {
             // The login failed. Check error to see why.
             UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Login Failed"
-                                                            message:[NSString stringWithFormat:@"%@",[error localizedFailureReason]]
+                                                            message:[error userInfo][@"error"]
                                                            delegate:self
                                                   cancelButtonTitle:@"Awww..."
                                                   otherButtonTitles:nil, nil];

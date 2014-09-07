@@ -98,7 +98,6 @@
                                    _waitLabel.text = @"uberX N/A";
                                }else{
                                    NSString *time = [NSString stringWithFormat:@"%@",[json objectForKey:@"times"]];
-                                   NSLog(@"Time %@",timeURLString);
                                    _waitLabel.text = [NSString stringWithFormat:@"%d minute(s)",[time intValue]/60];
                                }
                            }];

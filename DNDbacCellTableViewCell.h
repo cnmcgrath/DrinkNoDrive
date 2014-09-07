@@ -10,7 +10,6 @@
 
 @interface DNDbacCellTableViewCell : UITableViewCell
 
-@property (weak, nonatomic) IBOutlet UILabel *bacTextLabel;
 @property (weak, nonatomic) IBOutlet UILabel *driveIndicatorLabel;
 
 @end

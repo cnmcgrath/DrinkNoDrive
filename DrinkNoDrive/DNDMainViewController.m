@@ -87,13 +87,17 @@
     DNDGoHomeTableViewCell *homeCell = [tableView dequeueReusableCellWithIdentifier:@"homeCell"];
     
 
-    
-    
-
     if (indexPath.section == 0) {
-        bacCell.bacTextLabel.text = [NSString stringWithFormat:@"%.3f",bac];
+        if (bac > 0.06) {
+            bacCell.driveIndicatorLabel.text = @"DO NOT DRIVE";
+            bacCell.driveIndicatorLabel.textColor = [UIColor redColor];
+        }else{
+            bacCell.driveIndicatorLabel.text = @"You're okay still";
+            bacCell.driveIndicatorLabel.textColor = [UIColor whiteColor];
+        }
         return bacCell;
     }else if (indexPath.section == 1){
+        lastCell.bacLevelLabel.text = [NSString stringWithFormat:@"%.3f",bac];
         return lastCell;
     }else if (indexPath.section == 2){
         return homeCell;
@@ -107,6 +111,7 @@
 {
     if (indexPath.section == 2) {
         // Launch uber
+        [self.tabBarController setSelectedIndex:0];
         [self.tableView deselectRowAtIndexPath:indexPath animated:YES];
     }else{
         [self.tableView deselectRowAtIndexPath:indexPath animated:YES];

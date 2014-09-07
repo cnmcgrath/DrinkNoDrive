@@ -7,7 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <Parse/Parse.h>
 
-@interface DNDUberViewController : UIViewController
+@interface DNDUberViewController : UIViewController <CLLocationManagerDelegate>
+
+@property (weak, nonatomic) IBOutlet UILabel *currentLocationLabel;
+@property (weak, nonatomic) IBOutlet UILabel *homeLocationLabel;
+@property (weak, nonatomic) IBOutlet UILabel *priceLabel;
+@property (weak, nonatomic) IBOutlet UILabel *waitLabel;
+
+- (IBAction)openUberApp:(id)sender;
 
 @end

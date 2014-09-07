@@ -76,7 +76,6 @@
 {
 
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"drinkCell" forIndexPath:indexPath];
-    
     cell.textLabel.text = [[arrayOfDrinksForCat objectAtIndex:indexPath.row] objectForKey:@"Drink_Name"];
     cell.detailTextLabel.text = [[[arrayOfDrinksForCat objectAtIndex:indexPath.row] objectForKey:@"alcohol_content"] stringValue];
     
@@ -96,67 +95,6 @@
             NSLog(@"%@",error);
         }
     }];
-
-
-
-
-
-
-
-
-
-    //Pull user BAC
-//    PFUser *user = [PFUser currentUser];
-//    
-//    
-//    
-//    [[PFUser query] getFirstObjectInBackgroundWithBlock:^(PFObject *object, NSError *error) {
-//        //Our Current BAC
-//        PFQuery *query = [PFQuery queryWithClassName:@"Drink_History"];
-//        [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
-//            NSLog(@"Count of drinks? %d",[objects count]);
-//        }];
-    
-        
-        
-        
-        
-        
-        
-        
-//        NSLog(@"BAC: %@",object);
-//        
-//        //NSLog(@"Drink count %d",[object[@"Drink_History"] count]);
-////        for (PFObject *obj in object[@"Drink_History"]) {
-////            NSLog(@"objs %@",obj);
-////        }
-//        NSDictionary *dictOfDrinks = object[@"Drink_History"];
-//        NSLog(@"Drinks %@",dictOfDrinks);
-//        
-//        //float initBAC = [object[@"Estimated_BAC"] floatValue];
-//        float weight = [object[@"Weight_Pounds"] floatValue];
-//        float gender = [object[@"gender"] floatValue];
-//        
-//        float newBAC = (((0.6*3)*5.14)/((weight)*(gender)))-(.015 * (1));
-//
-//        NSLog(@"BAC %f",newBAC);
-//    }];
-    
-    
-//    //Post Test
-//    PFRelation *relation = [user relationForKey:@"Drink_History"];
-//    [relation addObject:[arrayOfDrinksForCat objectAtIndex:indexPath.row]];
-//    
-//    [user saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
-//        if (!error) {
-//            NSLog(@"YAY!");
-//            [self.tableView deselectRowAtIndexPath:indexPath animated:YES];
-//        }else{
-//            NSLog(@"%@",error);
-//        }
-//    }];
-
-
 
 }
 

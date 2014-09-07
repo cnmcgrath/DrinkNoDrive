@@ -29,13 +29,7 @@
 		F53A1D1F19BB06640032AB52 /* DNDGoHomeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F53A1D1E19BB06640032AB52 /* DNDGoHomeTableViewCell.m */; };
 		F53A1D2119BB10170032AB52 /* Hero.otf in Resources */ = {isa = PBXBuildFile; fileRef = F53A1D2019BB10170032AB52 /* Hero.otf */; };
 		F53A1D2319BB10220032AB52 /* Hero Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = F53A1D2219BB10220032AB52 /* Hero Light.otf */; };
-		F53A1D2B19BB104E0032AB52 /* beer.png in Resources */ = {isa = PBXBuildFile; fileRef = F53A1D2619BB104E0032AB52 /* beer.png */; };
-		F53A1D2C19BB104E0032AB52 /* cocktail.png in Resources */ = {isa = PBXBuildFile; fileRef = F53A1D2719BB104E0032AB52 /* cocktail.png */; };
-		F53A1D2D19BB104E0032AB52 /* liquor.png in Resources */ = {isa = PBXBuildFile; fileRef = F53A1D2819BB104E0032AB52 /* liquor.png */; };
-		F53A1D2E19BB104E0032AB52 /* wine.png in Resources */ = {isa = PBXBuildFile; fileRef = F53A1D2919BB104E0032AB52 /* wine.png */; };
 		F53A1D3119BB1BB90032AB52 /* DNDDrinkListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F53A1D3019BB1BB90032AB52 /* DNDDrinkListTableViewController.m */; };
-		F53A1D3319BB7A940032AB52 /* Mr_Happy_Time.png in Resources */ = {isa = PBXBuildFile; fileRef = F53A1D3219BB7A940032AB52 /* Mr_Happy_Time.png */; };
-		F53A1D3519BB7ABB0032AB52 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = F53A1D3419BB7ABB0032AB52 /* background.png */; };
 		F5B1259419BA9F3E00FAC94A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5B1259319BA9F3E00FAC94A /* Foundation.framework */; };
 		F5B1259619BA9F3E00FAC94A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5B1259519BA9F3E00FAC94A /* CoreGraphics.framework */; };
 		F5B1259819BA9F3E00FAC94A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5B1259719BA9F3E00FAC94A /* UIKit.framework */; };
@@ -95,14 +89,8 @@
 		F53A1D1E19BB06640032AB52 /* DNDGoHomeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNDGoHomeTableViewCell.m; sourceTree = "<group>"; };
 		F53A1D2019BB10170032AB52 /* Hero.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Hero.otf; sourceTree = "<group>"; };
 		F53A1D2219BB10220032AB52 /* Hero Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Hero Light.otf"; sourceTree = "<group>"; };
-		F53A1D2619BB104E0032AB52 /* beer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = beer.png; sourceTree = "<group>"; };
-		F53A1D2719BB104E0032AB52 /* cocktail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cocktail.png; sourceTree = "<group>"; };
-		F53A1D2819BB104E0032AB52 /* liquor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = liquor.png; sourceTree = "<group>"; };
-		F53A1D2919BB104E0032AB52 /* wine.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wine.png; sourceTree = "<group>"; };
 		F53A1D2F19BB1BB90032AB52 /* DNDDrinkListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNDDrinkListTableViewController.h; sourceTree = "<group>"; };
 		F53A1D3019BB1BB90032AB52 /* DNDDrinkListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNDDrinkListTableViewController.m; sourceTree = "<group>"; };
-		F53A1D3219BB7A940032AB52 /* Mr_Happy_Time.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Mr_Happy_Time.png; sourceTree = "<group>"; };
-		F53A1D3419BB7ABB0032AB52 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
 		F5B1259019BA9F3E00FAC94A /* DrinkNoDrive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrinkNoDrive.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5B1259319BA9F3E00FAC94A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F5B1259519BA9F3E00FAC94A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -236,12 +224,6 @@
 		F53A1D2419BB10370032AB52 /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				F53A1D3219BB7A940032AB52 /* Mr_Happy_Time.png */,
-				F53A1D3419BB7ABB0032AB52 /* background.png */,
-				F53A1D2619BB104E0032AB52 /* beer.png */,
-				F53A1D2719BB104E0032AB52 /* cocktail.png */,
-				F53A1D2819BB104E0032AB52 /* liquor.png */,
-				F53A1D2919BB104E0032AB52 /* wine.png */,
 			);
 			name = Images;
 			path = ..;
@@ -414,15 +396,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				F5B125AF19BA9F3E00FAC94A /* Images.xcassets in Resources */,
-				F53A1D2C19BB104E0032AB52 /* cocktail.png in Resources */,
-				F53A1D3319BB7A940032AB52 /* Mr_Happy_Time.png in Resources */,
-				F53A1D2D19BB104E0032AB52 /* liquor.png in Resources */,
 				F53A1D2119BB10170032AB52 /* Hero.otf in Resources */,
-				F53A1D2B19BB104E0032AB52 /* beer.png in Resources */,
-				F53A1D2E19BB104E0032AB52 /* wine.png in Resources */,
 				F5B1259E19BA9F3E00FAC94A /* InfoPlist.strings in Resources */,
 				F53A1D2319BB10220032AB52 /* Hero Light.otf in Resources */,
-				F53A1D3519BB7ABB0032AB52 /* background.png in Resources */,
 				F5B125A719BA9F3E00FAC94A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

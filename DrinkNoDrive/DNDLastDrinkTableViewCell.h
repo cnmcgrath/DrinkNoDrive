@@ -10,6 +10,6 @@
 
 @interface DNDLastDrinkTableViewCell : UITableViewCell
 
-@property (weak, nonatomic) IBOutlet UILabel *lastDrinkTextLabel;
-@property (weak, nonatomic) IBOutlet UILabel *alcoholContentLabel;
+@property (weak, nonatomic) IBOutlet UILabel *bacLevelLabel;
+
 @end

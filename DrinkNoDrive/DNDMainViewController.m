@@ -7,6 +7,7 @@
 //
 
 #import "DNDMainViewController.h"
+#import "DNDParseDownloadController.h"
 
 //Table View Cells
 #import "DNDbacCellTableViewCell.h"
@@ -34,29 +35,18 @@
     
     self.tableView.backgroundColor = [UIColor appBackground];
     
-
 }
 
 - (void)viewWillAppear:(BOOL)animated
 {
-    PFQuery *query = [PFQuery queryWithClassName:@"DrinkHistory"];
-    [query whereKey:@"Customer" equalTo:[PFUser currentUser]];
-    [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
-        NSLog(@"Number of drinks??? %d",[objects count]);
-        [[PFUser query] getFirstObjectInBackgroundWithBlock:^(PFObject *object, NSError *error) {
-            //start calulating BAC
-            if ([objects count] != 0) {
-                float weight = [object[@"Weight_Pounds"] floatValue];
-                float gender = [object[@"gender"] floatValue];
-                float newBAC = (((0.6*[objects count])*5.14)/((weight)*(gender)))-(.015 * (1));
-                bac = newBAC;
-                [self.tableView reloadData];
-            }else{
-                bac = 0.0;
-                [self.tableView reloadData];
-            }
+    DNDParseDownloadController* app = [[DNDParseDownloadController alloc] init];
+    [app calculateBACOfCurrentUser:^(float BAC, NSError *err) {
+        if (!err) {
+            bac = BAC;
+            [self.tableView reloadData];
+        }else{
             
-        }];
+        }
     }];
 }
 
@@ -80,12 +70,10 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
     DNDbacCellTableViewCell *bacCell = [tableView dequeueReusableCellWithIdentifier:@"bacCell"];
     DNDLastDrinkTableViewCell *lastCell = [tableView dequeueReusableCellWithIdentifier:@"lastCell"];
     DNDGoHomeTableViewCell *homeCell = [tableView dequeueReusableCellWithIdentifier:@"homeCell"];
-    
 
     if (indexPath.section == 0) {
         if (bac > 0.06) {
@@ -104,14 +92,13 @@
     }else{
         return cell;
     }
-
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     if (indexPath.section == 2) {
         // Launch uber
-        [self.tabBarController setSelectedIndex:0];
+        [self.tabBarController setSelectedIndex:2];
         [self.tableView deselectRowAtIndexPath:indexPath animated:YES];
     }else{
         [self.tableView deselectRowAtIndexPath:indexPath animated:YES];

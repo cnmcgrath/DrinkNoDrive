@@ -42,7 +42,7 @@
     for (id x in [self.view subviews]) {
         if([x isKindOfClass:[UIButton class]]){
             UIButton *button = (UIButton*)x;
-            button.layer.cornerRadius = 10;
+            button.layer.cornerRadius = 15;
             button.clipsToBounds = YES;
         }
     }
@@ -80,9 +80,7 @@
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-
     DNDDrinkListTableViewController *dl = (DNDDrinkListTableViewController*)[segue destinationViewController];
     dl.filterString = drinkType;
-    
 }
 @end

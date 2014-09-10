@@ -53,17 +53,15 @@
     NSString *timeURLString = [NSString stringWithFormat:@"https://api.uber.com/v1/estimates/time?start_latitude=%@&start_longitude=%@&server_token=V204K_Ay61XAWnJ98iDNMGVAZDg2fIM553e0qBeD",Latitude,Longititude];
     NSURL *timeURL = [NSURL URLWithString:timeURLString];
     NSURLRequest *request =[NSURLRequest requestWithURL:timeURL];
-    [NSURLConnection sendAsynchronousRequest:request
-                                       queue:[NSOperationQueue mainQueue]
-                           completionHandler:^(NSURLResponse *response, NSData *data, NSError *connectionError) {
-                               NSDictionary* json = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:nil];
-                               if ([json objectForKey:@"times"] == nil) {
-                                   u_time = @"uberX N/A";
-                               }else{
-                                   NSString *time = [NSString stringWithFormat:@"%@",[json objectForKey:@"times"]];
-                                   u_time = [NSString stringWithFormat:@"%d minute(s)",[time intValue]/60];
-                               }
-                           }];
+    [NSURLConnection sendAsynchronousRequest:request queue:[NSOperationQueue mainQueue] completionHandler:^(NSURLResponse *response, NSData *data, NSError *connectionError) {
+        NSDictionary* json = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:nil];
+        if ([json objectForKey:@"times"] == nil) {
+            u_time = @"uberX N/A";
+        }else{
+            NSString *time = [NSString stringWithFormat:@"%@",[json objectForKey:@"times"]];
+            u_time = [NSString stringWithFormat:@"%d minute(s)",[time intValue]/60];
+        }
+    }];
     
     //GeoCode address and get price
     
@@ -78,13 +76,11 @@
         NSURL *url = [NSURL URLWithString:urlString];
         
         NSURLRequest *request =[NSURLRequest requestWithURL:url];
-        [NSURLConnection sendAsynchronousRequest:request
-                                           queue:[NSOperationQueue mainQueue]
-                               completionHandler:^(NSURLResponse *response, NSData *data, NSError *connectionError) {
-                                   NSDictionary* json = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:nil];
-                                   NSString *cost = [[[json objectForKey:@"prices"] objectAtIndex:0] objectForKey:@"estimate"];
-                                   block(u_time,cost,nil);
-                               }];
+        [NSURLConnection sendAsynchronousRequest:request queue:[NSOperationQueue mainQueue] completionHandler:^(NSURLResponse *response, NSData *data, NSError *connectionError) {
+            NSDictionary* json = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:nil];
+            NSString *cost = [[[json objectForKey:@"prices"] objectAtIndex:0] objectForKey:@"estimate"];
+            block(u_time,cost,nil);
+        }];
         
     }];
 }

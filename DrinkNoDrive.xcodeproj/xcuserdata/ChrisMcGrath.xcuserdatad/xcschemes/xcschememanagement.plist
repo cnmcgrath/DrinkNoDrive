@@ -4,20 +4,40 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>BACWidget.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
 		<key>DrinkNoDrive.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>DrinkNoDriveExtension.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>F579803E19C1D4CF0010DF92</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>F5B1258F19BA9F3E00FAC94A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>F5B125B319BA9F3E00FAC94A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F5CB499E19C1E37300D2C6D7</key>
 		<dict>
 			<key>primary</key>
 			<true/>
